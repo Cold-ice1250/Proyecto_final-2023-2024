@@ -1,0 +1,56 @@
+Categoria:
+Id_Categoria (PK)
+Nombre_Categoria
+Descripcion
+
+
+Venta:
+Id_Venta (PK)
+Id_Cliente (FK)
+Id_Producto (FK)
+Id_Empleado (FK)
+Fecha_y_hora
+Total_venta
+
+
+Proveedor:
+Id_Proveedor (PK)
+Nombre
+Direccion
+Correo
+Telefono
+
+
+Producto:
+Id_Producto (PK)
+Nombre_Producto
+Id_Categoria (FK)
+Precio
+Id_Proveedor (FK)
+
+
+Inventario:
+Ubicacion (PK)
+Id_Producto (FK)
+Cantidad_Stock
+Pureza_Metal
+Tipo_Producto
+Peso
+Fecha_Entrada
+Fecha_Salida
+
+
+Empleado:
+Id_Empleado (PK)
+Nombre
+Cargo
+Salario
+Contacto
+
+
+Cliente:
+Id_Cliente (PK)
+Nombre
+Direccion 
+Correo
+Telefono
